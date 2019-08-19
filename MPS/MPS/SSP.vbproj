@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A94FEDD-AF02-4FB1-B98A-64778FB5B920}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SSP.My.MyApplication</StartupObject>
+    <RootNamespace>SSP</RootNamespace>
+    <AssemblyName>SSP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\TestInstall\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SSP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SSP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D82BD3CD71EBEEFD9FD295838AAC0D5D54419230</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MPS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Copy of myapp009.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="npgsql, Version=2.1.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\dbClass.vb" />
+    <Compile Include="CustomFormat\daily.Designer.vb">
+      <DependentUpon>daily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\daily.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\DataGridViewDateTimePickerMMMMyyyy.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\Monthly.Designer.vb">
+      <DependentUpon>Monthly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\Monthly.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\WorkingDaysParam.Designer.vb">
+      <DependentUpon>WorkingDaysParam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\WorkingDaysParam.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataGridViewDTPickerDemo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\DataGridViewDateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomFormat\weektomonth.Designer.vb">
+      <DependentUpon>weektomonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFormat\weektomonth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DBAdapter.vb" />
+    <Compile Include="Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWorkingDays.Designer.vb">
+      <DependentUpon>DialogWorkingDays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWorkingDays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGroupFamily.Designer.vb">
+      <DependentUpon>FormGroupFamily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGroupFamily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportFTYCap.designer.vb">
+      <DependentUpon>FormImportFTYCap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportFTYCap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportFTYCapV2.Designer.vb">
+      <DependentUpon>FormImportFTYCapV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportFTYCapV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportMPSFamily.Designer.vb">
+      <DependentUpon>FormImportMPSFamily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportMPSFamily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportRange.Designer.vb">
+      <DependentUpon>FormImportRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportRange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportSOPFamilies2.Designer.vb">
+      <DependentUpon>FormImportSOPFamilies2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportSOPFamilies2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportSOPFamily.designer.vb">
+      <DependentUpon>FormImportSOPFamily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportSOPFamily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportSSPCSV.designer.vb">
+      <DependentUpon>FormImportSSPCSV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportSSPCSV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportSSPV2.Designer.vb">
+      <DependentUpon>FormImportSSPV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportSSPV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportSSPV3.Designer.vb">
+      <DependentUpon>FormImportSSPV3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportSSPV3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonthlyTable.Designer.vb">
+      <DependentUpon>FormMonthlyTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonthlyTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSSPComparisonMonthly.Designer.vb">
+      <DependentUpon>FormSSPComparisonMonthly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSSPComparisonMonthly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateVendorSSM.Designer.vb">
+      <DependentUpon>FormUpdateVendorSSM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateVendorSSM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWeeklyMPS.designer.vb">
+      <DependentUpon>FormWeeklyMPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWeeklyMPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkingDays.Designer.vb">
+      <DependentUpon>FormWorkingDays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkingDays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVarMod.vb" />
+    <Compile Include="HelperClass.vb" />
+    <Compile Include="MPSReport1.Designer.vb">
+      <DependentUpon>MPSReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPSReport1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPSReport2.Designer.vb">
+      <DependentUpon>MPSReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPSReport2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicClass.vb" />
+    <Compile Include="Report1.designer.vb">
+      <DependentUpon>Report1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMPSAllSuppliers.Designer.vb">
+      <DependentUpon>FormMPSAllSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMPSAllSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSPComparisonFG.Designer.vb">
+      <DependentUpon>SSPComparisonFG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SSPComparisonFG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomFormat\daily.resx">
+      <DependentUpon>daily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\Monthly.resx">
+      <DependentUpon>Monthly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\weektomonth.resx">
+      <DependentUpon>weektomonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomFormat\WorkingDaysParam.resx">
+      <DependentUpon>WorkingDaysParam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridViewDTPickerDemo.resx">
+      <DependentUpon>DataGridViewDTPickerDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWorkingDays.resx">
+      <DependentUpon>DialogWorkingDays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroupFamily.resx">
+      <DependentUpon>FormGroupFamily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportFTYCap.resx">
+      <DependentUpon>FormImportFTYCap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportFTYCapV2.resx">
+      <DependentUpon>FormImportFTYCapV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportMPSFamily.resx">
+      <DependentUpon>FormImportMPSFamily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportRange.resx">
+      <DependentUpon>FormImportRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportSOPFamilies2.resx">
+      <DependentUpon>FormImportSOPFamilies2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportSOPFamily.resx">
+      <DependentUpon>FormImportSOPFamily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportSSPCSV.resx">
+      <DependentUpon>FormImportSSPCSV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportSSPV2.resx">
+      <DependentUpon>FormImportSSPV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportSSPV3.resx">
+      <DependentUpon>FormImportSSPV3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonthlyTable.resx">
+      <DependentUpon>FormMonthlyTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSSPComparisonMonthly.resx">
+      <DependentUpon>FormSSPComparisonMonthly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateVendorSSM.resx">
+      <DependentUpon>FormUpdateVendorSSM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWeeklyMPS.resx">
+      <DependentUpon>FormWeeklyMPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkingDays.resx">
+      <DependentUpon>FormWorkingDays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPSReport1.resx">
+      <DependentUpon>MPSReport1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPSReport2.resx">
+      <DependentUpon>MPSReport2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMPSAllSuppliers.resx">
+      <DependentUpon>FormMPSAllSuppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSPComparisonFG.resx">
+      <DependentUpon>SSPComparisonFG.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="MPS_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Templates\ExcelTemplate.xltx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DJLib\DJLib.vbproj">
+      <Project>{744C93D1-44E9-4678-9315-25634864A836}</Project>
+      <Name>DJLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Copy of myapp009.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

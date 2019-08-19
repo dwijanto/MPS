@@ -1,0 +1,122 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="con1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Host=hon03nt;port=5432;database=LogisticDb</Value>
+    </Setting>
+    <Setting Name="con2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Host=hon14nt;port=5432;database=LogisticDb</Value>
+    </Setting>
+    <Setting Name="temp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Host=localhost;port=5432;database=LogisticDb20150120</Value>
+    </Setting>
+    <Setting Name="MenuStripGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="MenuStripGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">DimGray</Value>
+    </Setting>
+    <Setting Name="MenuStripForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">WhiteSmoke</Value>
+    </Setting>
+    <Setting Name="MenuItemPressedGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Maroon</Value>
+    </Setting>
+    <Setting Name="MenuItemPressedGradientMiddle" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Maroon</Value>
+    </Setting>
+    <Setting Name="MenuItemPressedGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="MenuItemSelectedGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="MenuItemSelectedGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="MenuItemSelected" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ImageMarginGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Maroon</Value>
+    </Setting>
+    <Setting Name="ImageMarginGradientMiddle" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">WhiteSmoke</Value>
+    </Setting>
+    <Setting Name="ImageMarginGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">WhiteSmoke</Value>
+    </Setting>
+    <Setting Name="MenuBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="MenuItemBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ToolStripBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="ToolStripContentPanelGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Maroon</Value>
+    </Setting>
+    <Setting Name="ToolStripContentPanelGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">HighlightText</Value>
+    </Setting>
+    <Setting Name="ToolStripDropDownBackground" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightGray</Value>
+    </Setting>
+    <Setting Name="ToolStripGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">HighlightText</Value>
+    </Setting>
+    <Setting Name="ToolStripGradientMiddle" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">HighlightText</Value>
+    </Setting>
+    <Setting Name="ToolStripGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">HighlightText</Value>
+    </Setting>
+    <Setting Name="StatusStripGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="StatusStripGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">DimGray</Value>
+    </Setting>
+    <Setting Name="ToolStripForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="StatusStripForeColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">WhiteSmoke</Value>
+    </Setting>
+    <Setting Name="ToolStripPanelGradientBegin" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gold</Value>
+    </Setting>
+    <Setting Name="ToolStripPanelGradientEnd" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">InactiveCaption</Value>
+    </Setting>
+    <Setting Name="oExCon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQLhon03nt;</Value>
+    </Setting>
+    <Setting Name="oExConLive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQLhon03nt;</Value>
+    </Setting>
+    <Setting Name="oExConTest" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC;DSN=PostgreSQL30;</Value>
+    </Setting>
+    <Setting Name="con3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Host=hon14nt;port=5432;database=LogisticDb</Value>
+    </Setting>
+    <Setting Name="connectionstring1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;Timeout=1000;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;Timeout=1000;</Value>
+    </Setting>
+    <Setting Name="ConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;Timeout=1000;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Host=hon14nt;port=5432;database=LogisticDb;commandTimeout=1000;Timeout=1000;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
