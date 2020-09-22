@@ -6,7 +6,20 @@ DJLib
 </name>
 </assembly>
 <members>
-<member name="M:DJLib.DataGridViewAutoFilterTextBoxColumn.#ctor">
+<member name="P:DJLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DJLib.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DJLib.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DJLib.DataGridViewAutoFilterTextBoxColumn.#ctor">
 	<summary>
  Initializes a new instance of the DataGridViewAutoFilterTextBoxColumn class.
  </summary>
@@ -388,19 +401,6 @@ DJLib
 	<summary>
  Provides a drop-down filter list in a DataGridViewColumnHeaderCell.
  </summary>
-</member><member name="P:DJLib.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:DJLib.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:DJLib.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>
